@@ -1,11 +1,11 @@
-# ============================================================
+##############################################
 # EVBoise Fleet Project (.gitignore)
 # Stack: Next.js + PowerShell + SharePoint / PnP
-# ============================================================
+##############################################
 
-##############################
-# Node / Next.js build files #
-##############################
+################################
+# Node / Next.js build files   #
+################################
 node_modules/
 .next/
 out/
@@ -41,6 +41,23 @@ auth.json
 token.json
 
 ################################
+# MSAL token cache	       #	
+################################
+msal_cache.bin
+
+################################
+# Python / Virtual Environment #
+################################
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+*.egg-info/
+pip-log.txt
+
+################################
 # PowerShell & Windows clutter #
 ################################
 # PowerShell transient files
@@ -55,9 +72,9 @@ Desktop.ini
 ehthumbs.db
 *.lnk
 
-###########################
-# SharePoint / PnP files  #
-###########################
+################################
+# SharePoint / PnP files       #
+################################
 # Logs and exports
 PnP-Trace.log
 PnP.PowerShell.log
@@ -71,9 +88,9 @@ SharePointBackup_*/
 SPExport_*/
 SPTemp_*/
 
-###########################
-# System / IDE files      #
-###########################
+################################
+# System / IDE files           #
+################################
 .vscode/
 .idea/
 .DS_Store
@@ -88,15 +105,15 @@ SPTemp_*/
 coverage/
 *.tgz
 
-###########################
-# Local credentials       #
-###########################
+################################
+# Local credentials            #
+################################
 # Python or OneDrive .env
 C:\Users\mnc35\OneDrive\Documents\Python\.env
 
-###########################
-# Output / data dumps     #
-###########################
+################################
+# Output / data dumps          #
+################################
 logs/
 data/
 exports/
@@ -108,9 +125,9 @@ backup/
 *.zip
 *.tar.gz
 
-###########################
-# Misc
-###########################
+################################
+# Misc                         #
+################################
 # Ignore any generated diagrams or reports
 *.pdf
 *.rtf
