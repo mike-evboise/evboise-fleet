@@ -133,3 +133,11 @@ backup/
 *.rtf
 *.docx
 *.pptx
+
+.vercel
+# Ignore in-progress trading scripts
+trading/_dev/
+
+# Ignore all experimental dev scripts
+trading/_dev/*
+!trading/_dev/README.md
