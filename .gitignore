@@ -141,3 +141,16 @@ trading/_dev/
 # Ignore all experimental dev scripts
 trading/_dev/*
 !trading/_dev/README.md
+
+################################
+# Trading                      #
+################################
+trading/_dev/*
+!trading/_dev/README.md
+
+
+# Sandbox
+_dev/
+
+# Schwab refresh token
+schwab_token.json
