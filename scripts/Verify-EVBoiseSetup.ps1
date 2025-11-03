@@ -63,8 +63,8 @@ if ($CNAME) {
 $nsRecords = (Resolve-DnsName -Name $domain -Type NS -ErrorAction SilentlyContinue).NameHost
 if ($nsRecords) {
     Write-Host "📡 Current nameservers: $($nsRecords -join ', ')"
-    $matches = $nsRecords | Where-Object { $_ -in $expectedNameservers }
-    if ($matches.Count -gt 0) {
+    $nsMatches = $nsRecords | Where-Object { $_ -in $expectedNameservers }
+    if ($nsMatches.Count -gt 0) {
         Write-Host "✅ Expected nameservers are present"
     } else {
         Write-Host "❌ Nameservers do not match expected configuration" -ForegroundColor Red
