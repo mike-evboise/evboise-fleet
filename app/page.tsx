@@ -1,15 +1,22 @@
-// app/page.tsx
+// app/layout.tsx
+import "./globals.css";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "EV Boise",
-  description: "Tesla rentals and EV services in Boise, Idaho",
+export const metadata: Metadata = {
+  title: "EV Boise – Tesla Rentals & EV Services",
+  description: "Locally owned Tesla Model 3 rentals and EV support services in Boise, Idaho.",
 };
 
-export default function HomePage() {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <main className="p-4 text-center">
-      <h1 className="text-3xl font-bold">Welcome to EVBoise</h1>
-      <p className="text-gray-700 mt-2">Tesla rentals and EV services in Boise, Idaho.</p>
-    </main>
+    <html lang="en">
+      <body className="bg-gray-50 text-gray-800">
+        {children}
+      </body>
+    </html>
   );
 }
